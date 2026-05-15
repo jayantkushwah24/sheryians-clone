@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+@font-face {
+  font-family: neuna;
+  src: url("./assets/NeueMachina-Regular.otf");
+}
+main {
+  height: 100%;
+  width: 100%;
+  padding: 4vh 4vw;
+  color: white;
+  background-image: url("https://dfdx9u0psdezh.cloudfront.net/common/Background.svg");
+  background-position: top;
+  background-size: cover;
+}
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1vh;
+  height: 5vh;
+  width: 100%;
+}
+.nav-left img {
+  height: 5vmin;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+  box-shadow: 0.5px 0.5px 0 0 white;
+  padding: 2vh;
+  opacity: 0.7;
+  background-color: #0c0c0c;
+  border-radius: 0.5rem;
+  font-size: 1vw;
+}
+.nav-center div:hover {
+  color: red;
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-right img {
+  height: 4vmin;
+}
+svg {
+  height: 1.5vh;
+  width: 1.5vw;
+}
+section.one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  width: 100%;
+  margin-top: 4vw;
+}
+#one-first-line {
+  color: #e8602e;
+  font-size: 1.3vw;
+  margin: 1vh;
+}
+#one-second-line {
+  font-size: 4vw;
+  font-family: neuna;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+#companies-word {
+  border: 1px solid #e8602e;
+  background-color: #38160a;
+  display: inline-block;
+  padding: 0 5px;
+}
+#one-third-line {
+  font-size: 1.6vw;
+  font-weight: 200;
+}
+#one-fourth-line {
+  margin: 5vh 0;
+  font-weight: 200;
+  font-size: 1.1vw;
+  display: flex;
+  align-items: center;
+}
+
+.one-fourth-line-img {
+  border-radius: 50%;
+  height: 4vh;
+  width: 4vh;
+  margin-left: -0.5vw;
+  border: 1px solid white;
+  object-fit: cover;
+}
+#one-btn {
+  background-color: #e8602e;
+  color: white;
+  padding: 2vh 3vw;
+  border-radius: 1rem;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+}
