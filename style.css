@@ -112,9 +112,107 @@ section.one {
 #one-btn {
   background-color: #e8602e;
   color: white;
-  padding: 2vh 3vw;
+  padding: 2vh 2vw;
   border-radius: 1rem;
   font-size: 1vw;
   display: flex;
   align-items: center;
+  border: none;
+}
+#one-btn:hover {
+  box-shadow: 0px 0px 10px 1px #e8602e;
+  cursor: pointer;
+}
+
+.two {
+  width: 80%;
+  height: 80%;
+  margin: 3vw 10vw;
+  border: 1vw solid #161211;
+  background-color: #161211;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 23% 23% 48%;
+  grid-template-areas:
+    "subscriber learner start-learning"
+    "unlock unlock start-learning";
+  gap: 1vw;
+  border-radius: 1rem;
+}
+
+#subscriber {
+  background-color: #030101;
+  grid-area: subscriber;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: 300;
+  border: 0.5px solid darkslategray;
+}
+#learner {
+  background-color: #030101;
+  grid-area: learner;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0.5px solid darkslategray;
+}
+#unlock {
+  background-color: #030101;
+  grid-area: unlock;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  font-weight: 300;
+  border: 0.5px solid darkslategray;
+}
+#start-learning {
+  grid-area: start-learning;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  border: 0.5px solid darkslategray;
+}
+#start-learning h1 {
+  color: white;
+  z-index: 2;
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 2.7rem;
+  line-height: 1;
+}
+#start-learning video {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#start-learning button {
+  z-index: 2;
+  color: #c7572f;
+  position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
 }
